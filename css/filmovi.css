@@ -53,3 +53,20 @@ nav a:hover {
 .nije-u-ponudi {
     background-color: gray;
 }
+@media (max-width: 1100px) {
+    .filmovi-grid {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .film {
+        width: 30%;
+    }
+}
+
+@media (max-width: 500px) {
+    .film {
+        width: 100%;
+    }
+}
