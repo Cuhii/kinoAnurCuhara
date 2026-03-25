@@ -36,9 +36,14 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
 }
+
 nav a:hover {
-    text-decoration: underline;
+    background-color: #1a1a1a;
 }
 .filmovi-grid {
     display: flex;
