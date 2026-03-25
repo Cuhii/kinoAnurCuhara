@@ -78,3 +78,11 @@ nav a:hover {
         gap: 10px;
     }
 }
+section {
+    margin: 30px 20px;
+}
+
+.nije-u-ponudi h3,
+.nije-u-ponudi p {
+    color: white;
+}
