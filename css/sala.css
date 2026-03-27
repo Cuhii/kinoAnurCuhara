@@ -32,6 +32,27 @@ body {
     font-size: 18px;
     font-weight: bold;
 }
+.platno-box {
+    margin: 40px 20px 30px;
+    text-align: center;
+}
+
+.platno-linija {
+    width: 80%;
+    max-width: 700px;
+    height: 12px;
+    margin: 0 auto 10px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #6b7280, #d1d5db, #6b7280);
+    box-shadow: 0 6px 20px rgba(255,255,255,0.15);
+}
+
+.platno-box p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #cfcfcf;
+}
 @media (max-width: 600px) {
     .info-box {
         flex-direction: column;
