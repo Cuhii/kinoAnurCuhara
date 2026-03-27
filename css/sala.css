@@ -97,6 +97,28 @@ body {
     background: linear-gradient(145deg, #6b7280, #4b5563);
     box-shadow: 0 0 12px rgba(107, 114, 128, 0.3);
 }
+.legenda {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0 40px;
+    flex-wrap: wrap;
+}
+
+.legenda-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #d1d5db;
+    font-size: 15px;
+}
+
+.legenda-boja {
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    display: inline-block;
+}
 @media (max-width: 600px) {
     .info-box {
         flex-direction: column;
