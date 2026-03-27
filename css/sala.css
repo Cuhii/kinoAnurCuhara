@@ -74,24 +74,28 @@ body {
 .sjediste {
     width: 35px;
     height: 35px;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.sjedista-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.sjediste:hover {
+    transform: scale(1.08);
 }
 
 .slobodno {
-    background-color: #22c55e;
+    background: linear-gradient(145deg, #22c55e, #16a34a);
+    box-shadow: 0 0 12px rgba(34, 197, 94, 0.35);
 }
 
 .zauzeto {
-    background-color: #ef4444;
+    background: linear-gradient(145deg, #ef4444, #dc2626);
+    box-shadow: 0 0 12px rgba(239, 68, 68, 0.35);
 }
 
 .rezervisano {
-    background-color: #6b7280;
+    background: linear-gradient(145deg, #6b7280, #4b5563);
+    box-shadow: 0 0 12px rgba(107, 114, 128, 0.3);
 }
 @media (max-width: 600px) {
     .info-box {
