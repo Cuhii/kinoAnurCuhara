@@ -1,3 +1,48 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111;
+    border-bottom: 1px solid #2a2a2a;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 12px 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav li {
+    display: flex;
+    padding-bottom: 6px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 14px 22px;
+    border-radius: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+nav a:hover {
+    background-color: #1a1a1a;
+}
+
+.active-link {
+    border-bottom: 3px solid red;
+}
+
+.active-link a {
+    background-color: #1a1a1a;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -134,5 +179,12 @@ body {
     .sjediste {
         width: 25px;
         height: 25px;
+    }
+}
+@media (max-width: 700px) {
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
     }
 }
