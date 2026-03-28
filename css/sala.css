@@ -133,7 +133,11 @@ body {
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
+.sjedista-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .sjediste.slobodno:hover {
     transform: scale(1.15);
     box-shadow: 0 0 12px rgba(34, 197, 94, 0.6);
