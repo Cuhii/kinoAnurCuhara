@@ -64,3 +64,19 @@ h1 {
     color: #b0b0b0;
     font-size: 18px;
 }
+.raspored-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 20px auto;
+    padding: 25px 30px;
+    width: 90%;
+    max-width: 1000px;
+
+    border-radius: 20px;
+    background: linear-gradient(145deg, #111, #0a0a0a);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+
+    transition: all 0.3s ease;
+}
