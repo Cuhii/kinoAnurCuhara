@@ -49,4 +49,17 @@ function prikaziSalu() {
     }
 }
 
-prikaziSalu();
+prikaziSalu()
+document.getElementById("prethodnaBtn").addEventListener("click", function () {
+    if (trenutnaProjekcija > 0) {
+        trenutnaProjekcija--;
+        prikaziSalu();
+    }
+});
+
+document.getElementById("sljedecaBtn").addEventListener("click", function () {
+    if (trenutnaProjekcija < podaci.projekcije.length - 1) {
+        trenutnaProjekcija++;
+        prikaziSalu();
+    }
+});;
