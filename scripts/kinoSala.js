@@ -1,10 +1,9 @@
 let trenutnaProjekcija = 0;
 
 function prikaziSalu() {
+    const salaWrapper = document.querySelector(".sjedista-wrapper");
 
-    const salaDiv = document.querySelector(".sala-grid");
-
-    salaDiv.innerHTML = "";
+    salaWrapper.innerHTML = "";
 
     const projekcija = podaci.projekcije[trenutnaProjekcija];
 
@@ -13,7 +12,6 @@ function prikaziSalu() {
     document.getElementById("film-sala").textContent = projekcija.sala;
 
     const sjedista = projekcija.sjedista;
-
     const redovi = {};
 
     sjedista.forEach(s => {
@@ -32,21 +30,22 @@ function prikaziSalu() {
         oznaka.textContent = red;
 
         redDiv.appendChild(oznaka);
-    redovi[red].forEach(sjediste => {
-        const sjedisteDiv = document.createElement("div");
-        sjedisteDiv.classList.add("sjediste", sjediste.status);
 
-        sjedisteDiv.addEventListener("click", function () {
-            if (sjediste.status === "slobodno") {
-                sjediste.status = "rezervisano";
-                prikaziSalu();
-            }
-    });
+        redovi[red].forEach(sjediste => {
+            const sjedisteDiv = document.createElement("div");
+            sjedisteDiv.classList.add("sjediste", sjediste.status);
 
-    redDiv.appendChild(sjedisteDiv);
-});
+            sjedisteDiv.addEventListener("click", function () {
+                if (sjediste.status === "slobodno") {
+                    sjediste.status = "rezervisano";
+                    prikaziSalu();
+                }
+            });
 
-        salaDiv.appendChild(redDiv);
+            redDiv.appendChild(sjedisteDiv);
+        });
+
+        salaWrapper.appendChild(redDiv);
     }
 }
 
