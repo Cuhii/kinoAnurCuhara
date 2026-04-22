@@ -1,7 +1,35 @@
 let trenutnaProjekcija = 0;
 
+function validirajPodatke() {
+    if (!podaci.projekcije || podaci.projekcije.length === 0) {
+        return false;
+    }
+
+    const dozvoljeniStatusi = ["slobodno", "zauzeto", "rezervisano"];
+
+    for (let projekcija of podaci.projekcije) {
+        for (let sjediste of projekcija.sjedista) {
+            if (!dozvoljeniStatusi.includes(sjediste.status)) {
+                return false;
+            }
+        }
+    }
+
+    return true;
+}
+
+function prikaziPorukuGreske() {
+    const salaWrapper = document.querySelector(".sjedista-wrapper");
+    salaWrapper.innerHTML = "<p class='greska'>Podaci nisu validni!</p>";
+}
+
 function prikaziSalu() {
     const salaWrapper = document.querySelector(".sjedista-wrapper");
+
+    if (!validirajPodatke()) {
+        prikaziPorukuGreske();
+        return;
+    }
 
     salaWrapper.innerHTML = "";
 
@@ -49,7 +77,8 @@ function prikaziSalu() {
     }
 }
 
-prikaziSalu()
+prikaziSalu();
+
 document.getElementById("prethodnaBtn").addEventListener("click", function () {
     if (trenutnaProjekcija > 0) {
         trenutnaProjekcija--;
@@ -62,4 +91,4 @@ document.getElementById("sljedecaBtn").addEventListener("click", function () {
         trenutnaProjekcija++;
         prikaziSalu();
     }
-});;
+});

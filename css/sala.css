@@ -227,3 +227,10 @@ body {
     background-color: #2a2a2a;
     transform: translateY(-2px);
 }
+.greska {
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0;
+}
