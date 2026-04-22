@@ -18,164 +18,60 @@
 <main>
 
     <h1>Izaberite mjesto</h1>
-   <div class="info-box">
-    <div class="info-item">
-        <span class="label">FILM</span>
-        <p id="film-naziv"></p>
+
+    <div class="info-box">
+        <div class="info-item">
+            <span class="label">FILM</span>
+            <p id="film-naziv"></p>
+        </div>
+        <div class="info-item">
+            <span class="label">VRIJEME</span>
+            <p id="film-vrijeme"></p>
+        </div>
+        <div class="info-item">
+            <span class="label">SALA</span>
+            <p id="film-sala"></p>
+        </div>
     </div>
-    <div class="info-item">
-        <span class="label">VRIJEME</span>
-        <p id="film-vrijeme"></p>
-    </div>
-    <div class="info-item">
-        <span class="label">SALA</span>
-        <p id="film-sala"></p>
-    </div>
-</div>
+
     <div class="platno-box">
         <div class="platno-linija"></div>
         <p>PLATNO</p>
     </div>
-        <div class="sala-grid">
-            <div class="sjedista-wrapper">
-                <div class="red">
-                    <span class="oznaka-reda">A</span>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste zauzeto"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste rezervisano"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste zauzeto"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                </div>
 
-                <div class="red">
-                    <span class="oznaka-reda">B</span>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste zauzeto"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste rezervisano"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste zauzeto"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                </div>
-
-                <div class="red">
-                    <span class="oznaka-reda">C</span>
-                    <div class="sjediste rezervisano"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste zauzeto"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste rezervisano"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste zauzeto"></div>
-                    <div class="sjediste slobodno"></div>
-                </div>
-
-                <div class="red">
-                    <span class="oznaka-reda">D</span>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste zauzeto"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste rezervisano"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste zauzeto"></div>
-                    <div class="sjediste slobodno"></div>
-                </div>
-
-                <div class="red">
-                    <span class="oznaka-reda">E</span>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste rezervisano"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste zauzeto"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste rezervisano"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                </div>
-
-                <div class="red">
-                    <span class="oznaka-reda">F</span>
-                    <div class="sjediste zauzeto"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste rezervisano"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste zauzeto"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste rezervisano"></div>
-                </div>
-
-                <div class="red">
-                    <span class="oznaka-reda">G</span>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste rezervisano"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste zauzeto"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste zauzeto"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                </div>
-
-                <div class="red">
-                    <span class="oznaka-reda">H</span>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste zauzeto"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste rezervisano"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste zauzeto"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                    <div class="sjediste slobodno"></div>
-                </div>
-            </div>
-        
+    <!-- DINAMIČKI CRTANA SALA -->
+    <div class="sala-grid">
+        <div class="sjedista-wrapper"></div>
     </div>
+
+    <!-- LEGENDA -->
     <div class="legenda">
-    <div class="legenda-item">
-        <span class="legenda-boja slobodno"></span>
-        <span>Slobodno</span>
+        <div class="legenda-item">
+            <span class="legenda-boja slobodno"></span>
+            <span>Slobodno</span>
+        </div>
+
+        <div class="legenda-item">
+            <span class="legenda-boja zauzeto"></span>
+            <span>Zauzeto</span>
+        </div>
+
+        <div class="legenda-item">
+            <span class="legenda-boja rezervisano"></span>
+            <span>Rezervisano</span>
+        </div>
     </div>
 
-    <div class="legenda-item">
-        <span class="legenda-boja zauzeto"></span>
-        <span>Zauzeto</span>
+    <!-- DUGMAD -->
+    <div class="projekcija-dugmad">
+        <button id="prethodnaBtn">Prethodna projekcija</button>
+        <button id="sljedecaBtn">Sljedeca projekcija</button>
     </div>
-
-    <div class="legenda-item">
-        <span class="legenda-boja rezervisano"></span>
-        <span>Rezervisano</span>
-    </div>
-    
-</div>
-</div>
-<div class="projekcija-dugmad">
-    <button id="prethodnaBtn">Prethodna projekcija</button>
-    <button id="sljedecaBtn">Sljedeca projekcija</button>
 
 </main>
+
 <script src="../scripts/app.js"></script>
 <script src="../scripts/kinoSala.js"></script>
+
 </body>
 </html>
