@@ -234,3 +234,8 @@ body {
     text-align: center;
     margin: 30px 0;
 }
+.projekcija-dugmad button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}

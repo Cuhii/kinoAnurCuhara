@@ -23,6 +23,14 @@ function prikaziPorukuGreske() {
     salaWrapper.innerHTML = "<p class='greska'>Podaci nisu validni!</p>";
 }
 
+function azurirajDugmad() {
+    const prethodnaBtn = document.getElementById("prethodnaBtn");
+    const sljedecaBtn = document.getElementById("sljedecaBtn");
+
+    prethodnaBtn.disabled = trenutnaProjekcija === 0;
+    sljedecaBtn.disabled = trenutnaProjekcija === podaci.projekcije.length - 1;
+}
+
 function prikaziSalu() {
     const salaWrapper = document.querySelector(".sjedista-wrapper");
 
@@ -62,6 +70,7 @@ function prikaziSalu() {
         redovi[red].forEach(sjediste => {
             const sjedisteDiv = document.createElement("div");
             sjedisteDiv.classList.add("sjediste", sjediste.status);
+            sjedisteDiv.title = `${sjediste.red}${sjediste.broj} - ${sjediste.status}`;
 
             sjedisteDiv.addEventListener("click", function () {
                 if (sjediste.status === "slobodno") {
@@ -75,6 +84,8 @@ function prikaziSalu() {
 
         salaWrapper.appendChild(redDiv);
     }
+
+    azurirajDugmad();
 }
 
 prikaziSalu();
